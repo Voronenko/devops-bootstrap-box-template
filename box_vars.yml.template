@@ -1,0 +1,4 @@
+ my_deploy_user: jenkins
+ my_deploy_authorized_keys:
+   - "{{playbook_dir}}/components/files/ssh/vyacheslav.pub"
+

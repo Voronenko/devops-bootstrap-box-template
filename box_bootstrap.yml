@@ -1,0 +1,12 @@
+---
+- hosts: all
+
+  vars_files:
+    - ./box_vars.yml
+  roles:
+     - {
+         role: "sa-box-bootstrap",
+         root_dir: "{{playbook_dir}}/public/ansible_developer_recipes",
+         deploy_user: "{{my_deploy_user}}",
+         deploy_user_keys: "{{my_deploy_authorized_keys}}"
+       }
